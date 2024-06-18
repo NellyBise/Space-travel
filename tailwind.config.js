@@ -10,6 +10,7 @@ export default {
       "light-blue": "#D0D6F9",
       "dark-blue": '#0B0D17',
       white:"#FFFFFF",
+      transparent: 'transparent',
     },
     fontSize: {
       'xl': ['144px'],
