@@ -2,15 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Barlow;
-  line-height: 1.5;
-  font-weight: 400;
+:body {
+  line-height: normal;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.text-xl {
+  font-size: 144px;
   font-family: Bellefair;
+  line-height: normal;
+}
+
+.text-l {
+  font-size: 100px;
+  font-family: Bellefair;
+}
+
+.text-m {
+  font-size: 56px;
+  font-family: Bellefair;
+}
+
+.text-s {
+  font-size: 32px;
+  font-family: Bellefair;
+}
+
+.text-xs {
+  font-size: 28px;
+  font-family: 'Barlow condensed';
+  letter-spacing: 4px;
+}
+
+.text-subl {
+  font-size: 28px;
+  font-family: Bellefair;
+}
+
+.text-subs {
+  font-size: 14px;
+  font-family: 'Barlow condensed';
+  letter-spacing: 2px;
+}
+
+.text-nav {
+  font-size: 16px;
+  font-family: 'Barlow condensed';
+  letter-spacing: 2px;
+}
+
+.text-body {
+  font-size: 18px;
+  font-family: 'Barlow';
+}
+
+/* Appliquer les tailles de police en fonction de la taille de l'écran */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-l {
+    font-size: 80px;
+    font-family: Bellefair;
+  }
+
+  .text-m {
+    font-size: 40px;
+    font-family: Bellefair;
+  }
+
+  .text-body {
+    font-size: 16px;
+    font-family: 'Barlow';
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .text-xl {
+    font-size: 80px;
+    font-family: Bellefair;
+  }
+
+  .text-l {
+    font-size: 56px;
+    font-family: Bellefair;
+  }
+
+  .text-m {
+    font-size: 24px;
+    font-family: Bellefair;
+  }
+
+  .text-s {
+    font-size: 18px;
+    font-family: Bellefair;
+  }
+
+  .text-xs {
+    font-size: 16px;
+    font-family: 'Barlow condensed';
+  }
+
+  .text-body {
+    font-size: 15px;
+    font-family: 'Barlow';
+  }
 }

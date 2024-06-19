@@ -6,8 +6,8 @@
   <section class="min-h-screen bg-cover flex flex-col lg:flex-row justify-center lg:items-center pt-40 px-6 md:px-8 bg-[url('/home/background-home-mobile.jpg')] md:bg-[url('/home/background-home-tablet.jpg')] lg:bg-[url('/home/background-home-desktop.jpg')]">
     <article class="lg:w-1/2 lg:max-w-[555px] md:max-w-[512px] md:mx-auto lg:mx-0 text-center lg:text-left">
       <h1 class="text-xs text-light-blue">SO, YOU WANT TO TRAVEL TO</h1>
-      <h2 class="text-white text-xl">SPACE</h2>
-      <p class="text-light-blue">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      <h2 class="text-white text-xl py-6">SPACE</h2>
+      <p class="text-light-blue text-body">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
     </article>
     <article class="lg:w-1/2 lg:max-w-[555px] flex justify-center lg:justify-end">
     <div class="mt-16 md:mt-8 lg:mt-0 lg:translate-x-10 relative flex justify-center items-center w-96 h-96">

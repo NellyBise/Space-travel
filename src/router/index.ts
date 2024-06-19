@@ -17,7 +17,8 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createMemoryHistory(), routes
+    history: createMemoryHistory(), routes,
+    linkExactActiveClass: 'border-r-white md:border-r-transparent md:border-b-white hover:border-r-white md:hover:border-b-white'
   })
 
 export default router
