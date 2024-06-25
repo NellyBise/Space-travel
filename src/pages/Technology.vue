@@ -5,7 +5,6 @@ import technologies from '../data/technologies.json'
 interface Technology {
   name: string
   description: string
-  pictureLandscape: string
   picturePortrait: string
   id: number
 }
@@ -20,7 +19,7 @@ function select(technology: Technology) {
 
 <template>
   <section
-    class="min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 lg:w-full lg:pl-[165px] bg-[url('/technology/background-technology-mobile.jpg')] md:bg-[url('/technology/background-technology-tablet.jpg')] lg:bg-[url('/technology/background-technology-desktop.jpg')]"
+    class="h-[880px] md:h-[1136px] min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 lg:w-full lg:pl-[165px] bg-left bg-[url('/technology/background-technology.jpg')]"
   >
     <h1
       class="md:max-w-[514px] flex justify-center text-center md:self-start text-xs text-white flex md:px-8 lg:px-0 gap-6"

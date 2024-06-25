@@ -19,7 +19,7 @@ function select(destination: Destination) {
 
 <template>
   <section
-    class="min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-[url('/destination/background-destination-mobile.jpg')] md:bg-[url('/destination/background-destination-tablet.jpg')] lg:bg-[url('/destination/background-destination-desktop.jpg')]"
+    class="h-[880px] md:h-[1136px] min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-[url('/destination/background-destination-portrait.jpg')] lg:bg-[url('/destination/background-destination.jpg')]"
   >
     <h1
       class="lg:w-[1110px] md:max-w-[514px] flex justify-center text-center md:self-start text-xs text-white flex gap-6"
@@ -51,7 +51,7 @@ function select(destination: Destination) {
         <p class="text-light-blue text-body text-center lg:text-left">
           {{ selectedDestination.description }}
         </p>
-        <div class="h-px bg-white opacity-25 w-full my-6 md:my-10"></div>
+        <div class="h-px bg-white relative z-0 opacity-25 w-full my-6 md:my-10"></div>
         <div class="flex flex-col md:flex-row w-full text-center lg:text-left gap-y-6 md:gap-y-8">
           <div class="md:w-1/2">
             <p class="text-light-blue text-subs pb-2">AVG. DISTANCE</p>

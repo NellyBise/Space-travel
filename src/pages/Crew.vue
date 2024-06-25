@@ -18,7 +18,7 @@ function select(member: CrewMember) {
 
 <template>
   <section
-    class="min-h-screen overflow-hidden bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-[url('/crew/background-crew-mobile.jpg')] md:bg-[url('/crew/background-crew-tablet.jpg')] lg:bg-[url('/crew/background-crew-desktop.jpg')]"
+    class="h-[880px] md:h-[1136px] lg:min-h-screen overflow-hidden bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-bottom bg-[url('/crew/background-crew.jpg')]"
   >
     <h1
       class="lg:w-[1110px] md:max-w-[514px] flex justify-center text-center md:self-start text-xs text-white flex gap-6"
@@ -26,16 +26,16 @@ function select(member: CrewMember) {
       <span class="font-bold tracking-[4.72px] text-white/25">02</span>MEET YOUR CREW
     </h1>
     <article
-      class="px-0 lg:px-6 lg:px-0 md:max-w-[512px] lg:max-w-[1110px] flex flex-col h-screen lg:flex-row items-center gap-x-8 py-6 lg:py-36"
+      class="px-0 lg:px-6 lg:px-0 md:max-w-[512px] lg:max-w-[1110px] flex flex-col h-screen lg:flex-row items-center gap-x-8 mt-6 lg:my-36"
     >
-      <div class="lg:w-1/2 pt-8 lg:pb-8 flex flex-col h-[295px] lg:h-screen">
-        <div class="lg:h-5/6 text-center flex flex-col justify-center lg:text-left">
-          <p class="text-white/50 text-s uppercase">{{ memberSelected.function }}</p>
-          <h2 class="text-white text-m uppercase pb-6 md:pb-0">{{ memberSelected.name }}</h2>
+      <div class="lg:w-1/2 pt-8 lg:pb-8 flex flex-col md:h-[295px] lg:h-screen">
+        <div class="lg:h-4/6 text-center flex flex-col justify-center lg:text-left">
+          <p class="text-white/50 text-s uppercase md:pb-2">{{ memberSelected.function }}</p>
+          <h2 class="text-white text-m uppercase pb-6 lg:pb-0">{{ memberSelected.name }}</h2>
           <p class="text-light-blue text-body">{{ memberSelected.description }}</p>
         </div>
         <ul
-          class="lg:h-1/6 flex w-auto items-end justify-center lg:justify-start gap-4 lg:gap-8 lg:pb-16 pt-24 md:pt-12 lg:pt-0"
+          class="lg:h-1/6 flex w-auto items-end justify-center lg:justify-start gap-4 lg:gap-8 pt-4 md:pt-12 lg:pt-0"
         >
           <li v-for="member in crew" :key="member.name">
             <button
@@ -49,7 +49,7 @@ function select(member: CrewMember) {
           </li>
         </ul>
       </div>
-      <div class="w-[271px] md:w-[446px] lg:w-1/2 p-7 relative pt-20 md:pt-8">
+      <div class="w-[271px] md:w-[446px] lg:w-1/2 lg:m-7 relative mt-8 md:mt-16">
         <img :src="memberSelected.picture" />
         <div class="absolute bottom-0 w-full h-48 bg-gradient-to-t from-dark-blue from-15%"></div>
       </div>
