@@ -69,6 +69,11 @@
     font-family: Bellefair;
   }
 
+  .text-s {
+    font-size: 24px;
+    font-family: Bellefair;
+  }
+
   .text-body {
     font-size: 16px;
     font-family: 'Barlow';

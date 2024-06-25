@@ -3,8 +3,8 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-  <div>
-   <Header />
-  </div>
-  <router-view />
+  <Header />
+  <main>
+    <router-view />
+  </main>
 </template>
