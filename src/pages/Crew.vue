@@ -28,8 +28,10 @@ function select(member: CrewMember) {
     <article
       class="px-0 lg:px-6 lg:px-0 md:max-w-[512px] lg:max-w-[1110px] flex flex-col h-screen lg:flex-row items-center gap-x-8 mt-6 lg:my-36"
     >
-      <div class="lg:w-1/2 pt-8 lg:pb-8 flex flex-col md:h-[295px] lg:h-screen">
-        <div class="lg:h-full text-center flex flex-col justify-center lg:text-left">
+      <div
+        class="lg:w-1/2 lg:h-4/5 justify-between pt-8 lg:pb-8 flex flex-col md:h-[295px] lg:h-screen"
+      >
+        <div class="text-center flex flex-col justify-center lg:text-left">
           <p class="text-white/50 text-s uppercase md:pb-2">{{ memberSelected.function }}</p>
           <h2 class="text-white text-m uppercase pb-6 lg:pb-0">{{ memberSelected.name }}</h2>
           <p class="text-light-blue text-body">{{ memberSelected.description }}</p>
