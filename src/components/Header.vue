@@ -34,20 +34,22 @@ function linkClick() {
     <div
       class="hidden lg:block flex-grow relative left-16 h-px bg-white mx-8 opacity-25 z-40"
     ></div>
-    <nav
-      :class="{
-        'flex flex-col fixed font-barlow tracking-[2px] md:relative p-0 top-0 right-0 md:flex-row md:justify-center md:items-center w-64 md:w-auto h-full bg-white/5 backdrop-blur-xl text-nav text-white md:gap-12 flex md:pr-16 pl-6 md:pl-[159px] transform transition-transform duration-300 ease-in-out': true,
-        'translate-x-0 pointer-events-auto z-20': isOpen,
-        'translate-x-full pointer-events-none': !isOpen
-      }"
-    >
-      <img
-        :src="iconClose"
-        alt="click to hide navigation menu"
-        class="w-6 mr-6 mt-8 mb-12 self-end cursor-pointer md:hidden"
-        @click="isOpen = !isOpen"
-      />
-      <ul>
+    <nav>
+      <ul
+        :class="{
+          'flex flex-col fixed font-barlow tracking-[2px] md:relative p-0 top-0 right-0 md:flex-row md:justify-center md:items-center w-64 md:w-auto h-full bg-white/5 backdrop-blur-xl text-nav text-white md:gap-12 flex md:pr-16 pl-6 md:pl-[159px] transform transition-transform duration-300 ease-in-out': true,
+          'translate-x-0 pointer-events-auto z-20': isOpen,
+          'translate-x-full pointer-events-none': !isOpen
+        }"
+      >
+        <li class="ml-auto">
+          <img
+            :src="iconClose"
+            alt="click to hide navigation menu"
+            class="w-6 mr-6 mt-8 mb-12 self-end cursor-pointer md:hidden"
+            @click="isOpen = !isOpen"
+          />
+        </li>
         <li>
           <RouterLink
             to="/"
