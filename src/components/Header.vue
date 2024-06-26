@@ -42,9 +42,13 @@ function linkClick() {
           'translate-x-full pointer-events-none': !isOpen
         }"
       >
-        <button class="w-6 mr-2.5 mt-8 mb-12 self-end md:hidden" @click="isOpen = !isOpen">
-          <img :src="iconClose" alt="click to hide navigation menu" />
-        </button>
+        <img
+          :src="iconClose"
+          alt="click to hide navigation menu"
+          class="w-6 mr-6 mt-8 mb-12 self-end cursor-pointer md:hidden"
+          @click="isOpen = !isOpen"
+        />
+
         <li>
           <RouterLink
             to="/"
