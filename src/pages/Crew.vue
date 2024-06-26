@@ -40,6 +40,7 @@ function select(member: CrewMember) {
           <li v-for="member in crew" :key="member.name">
             <button
               @click="select(member)"
+              :aria-label="member.name"
               class="w-[10px] h-[10px] lg:w-[15px] lg:h-[15px] rounded-full duration-500 ease-in-out"
               :class="{
                 'bg-white hover:bg-white': member.name === memberSelected.name,

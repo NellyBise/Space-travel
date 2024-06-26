@@ -29,7 +29,7 @@ function linkClick() {
     class="absolute right-0 lg:mt-10 pl-10 pr-6 md:pr-0 md:pd-0 md:pl-16 w-screen flex justify-between items-center h-[88px] md:h-24"
   >
     <RouterLink to="/" class="text-white flex-shrink-0"
-      ><img :src="logo" alt="" class="text-white h-10 w-10 md:h-12 md:w-12"
+      ><img :src="logo" alt="link to home" class="text-white h-10 w-10 md:h-12 md:w-12"
     /></RouterLink>
     <div class="hidden lg:block flex-grow relative left-16 h-px bg-white mx-8 opacity-25"></div>
     <nav>
@@ -41,7 +41,7 @@ function linkClick() {
         }"
       >
         <button class="w-6 mr-2.5 mt-8 mb-12 self-end md:hidden" @click="isOpen = !isOpen">
-          <img :src="iconClose" alt="cliquer pour fermer le menu de navigation" />
+          <img :src="iconClose" alt="click to hide navigation menu" />
         </button>
         <li>
           <RouterLink

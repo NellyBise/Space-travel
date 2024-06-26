@@ -40,6 +40,7 @@ function select(technology: Technology) {
                 'text-dark-blue bg-white': technology.name === selectedTechnology?.name,
                 'text-white': technology.name !== selectedTechnology?.name
               }"
+              :aria-label="technology.name"
               @click="select(technology)"
             >
               {{ technology.id }}
