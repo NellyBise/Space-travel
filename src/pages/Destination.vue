@@ -19,7 +19,7 @@ function select(destination: Destination) {
 
 <template>
   <section
-    class="h-[880px] md:h-[1136px] min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-[url('/destination/background-destination-portrait.jpg')] lg:bg-[url('/destination/background-destination.jpg')]"
+    class="min-h-screen bg-cover flex flex-col items-center pt-28 md:pt-36 lg:pt-48 px-6 md:px-8 bg-fixed bg-[url('/destination/background-destination-portrait.jpg')] lg:bg-[url('/destination/background-destination.jpg')]"
   >
     <h1
       class="lg:w-[1110px] md:max-w-[514px] flex justify-center text-center md:self-start text-xs text-white flex gap-6"
@@ -27,7 +27,7 @@ function select(destination: Destination) {
       <span class="font-bold tracking-[4.72px] text-white/25">01</span>PICK YOUR DESTINATION
     </h1>
     <article
-      class="px-6 lg:px-0 md:max-w-[514px] lg:max-w-[1110px] flex flex-col lg:flex-row items-center gap-x-8 py-12 md:py-36"
+      class="md:max-w-[514px] lg:max-w-[1110px] flex flex-col lg:flex-row items-center gap-x-8 py-12 md:py-36"
     >
       <img :src="selectedDestination.picture" class="w-[150px] md:w-[300px] lg:w-1/2 lg:p-7" />
       <div class="lg:w-1/2 lg:px-12 flex flex-col items-center lg:items-start pt-16 lg:pb-8">
@@ -35,12 +35,11 @@ function select(destination: Destination) {
           <li v-for="destination in destinations" :key="destination.name">
             <button
               @click="select(destination)"
-              class="flex items-center pb-3 border-b-[3px] border-b-transparent hover:text-white duration-500 ease-in-out"
+              class="flex items-center pb-3 border-b-[3px] duration-700 ease-in-out"
               :class="{
-                'text-white border-b-white hover:border-b-white':
-                  destination.name === selectedDestination.name,
-                'hover:border-b-white/50 text-light-blue border-b-transparent':
-                  destination !== selectedDestination
+                'text-white border-b-white': destination.name === selectedDestination.name,
+                'text-light-blue border-b-transparent hover:border-b-white/50':
+                  destination.name !== selectedDestination.name
               }"
             >
               {{ destination.name }}
