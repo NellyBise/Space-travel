@@ -31,7 +31,9 @@ function linkClick() {
     <RouterLink to="/" class="text-white flex-shrink-0"
       ><img :src="logo" alt="link to home" class="text-white h-10 w-10 md:h-12 md:w-12"
     /></RouterLink>
-    <div class="hidden lg:block flex-grow relative left-16 h-px bg-white mx-8 opacity-25"></div>
+    <div
+      class="hidden lg:block flex-grow relative left-16 h-px bg-white mx-8 opacity-25 z-40"
+    ></div>
     <nav>
       <ul
         :class="{
